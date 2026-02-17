@@ -1,4 +1,4 @@
-WRITEUP FOR ALL THE BANDIT LEVELS 
+##WRITEUP FOR ALL THE BANDIT LEVELS 
 
 LEVEL-0
 used the cat to read the file readme in the level 0 to get the password for level 1.
@@ -107,3 +107,4 @@ used cmnd : mkdir,cd,cp,xxd -r,file,mv,gzip -d,bzip2 -d,tar -xf,cat.
 
 Level 13 Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 ------------------------------------------------------------------
+

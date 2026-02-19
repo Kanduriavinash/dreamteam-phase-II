@@ -1,9 +1,11 @@
 # WRITEUP FOR ALL THE BANDIT LEVELS 
 
+------------------------------------------------
 LEVEL-0
 used the cat to read the file readme in the level 0 to get the password for level 1.
 
-LEVEL 1 Password : ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+Level 1 Password : ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
 -------------------------------------------------
 LEVEL-01
 
@@ -57,6 +59,7 @@ now i used the find cmnd to search for the file which i required as before i fou
 used cmnd : find / -type f -user bandit7 -group bandit6 -size 33c
 
 Level 7 Password : morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
 -----------------------------------------------------------------
 LEVEL-07
 
@@ -65,6 +68,7 @@ comapred to before very easy one.used the grep cmd to find the password with the
 used cmnd : cat data.txt | grep millionth
 
 Level 8 Password : dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
 ------------------------------------------------------------------
 LEVEL-08
 
@@ -91,6 +95,7 @@ used base64 -d to decode the data in data.txt file with help of pipe too.
 used cmnd :cat data.txt | base64 -d
 
 Level 11 Password : dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
 ------------------------------------------------------------------
 LEVEL-11
 
@@ -99,6 +104,7 @@ used tr to translate the code to rotate 13 alphabets A-after rottating 13 times 
 used cmnd : cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 Level 12 Password : 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
 ------------------------------------------------------------------
 LEVEL-12
 This level took 1 hour for me till now this is the hardest level i have faced.So,many new things learnt and how to decompress the files and how to extract the archieved file and how to work on a file which was restricted in the home page by copy of the original file in a temp dir and at last found the file with ascii type after too many decompressed files.
@@ -106,6 +112,8 @@ This level took 1 hour for me till now this is the hardest level i have faced.So
 used cmnd : mkdir,cd,cp,xxd -r,file,mv,gzip -d,bzip2 -d,tar -xf,cat.
 
 Level 13 Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+
 ------------------------------------------------------------------
+
 
 

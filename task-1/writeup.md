@@ -2,6 +2,7 @@
 
 ------------------------------------------------
 LEVEL-0
+
 used the cat to read the file readme in the level 0 to get the password for level 1.
 
 Level 1 Password : ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
@@ -11,6 +12,7 @@ LEVEL-01
 
 now 1st i tried to read the file using cat but later realized that it is not the correct way to read it when we see the file name as - because if we use cat - it will think as we are giving input.
 I learnt a new thing that when ever the file name starts with - we have to use ./-filename to read the file. so,we have to use 
+
 used cmd : cat ./- to read the file - .
 
 Level 2 Password : 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
@@ -19,6 +21,7 @@ Level 2 Password : 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 LEVEL-02
 
 Here the file name have spaces and starts with -.so,when we try to read the file directly we can see that it is trying to take input but we want that specific file to be read.we have to use the prior knowldge of task 1 and new thing to overcome to read a file which has spaces in its filename. which is 
+
 used cmd : cat ./--spaces\ in\ this\ filename--
 
 Level 3 Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
@@ -114,6 +117,7 @@ used cmnd : mkdir,cd,cp,xxd -r,file,mv,gzip -d,bzip2 -d,tar -xf,cat.
 Level 13 Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
 ------------------------------------------------------------------
+
 
 
 

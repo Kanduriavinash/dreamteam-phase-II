@@ -117,6 +117,72 @@ used cmnd : mkdir,cd,cp,xxd -r,file,mv,gzip -d,bzip2 -d,tar -xf,cat.
 Level 13 Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
 ------------------------------------------------------------------
+LEVEL-13
+
+in this level they told we dont have permission to access password.
+
+used cmd :c hmod 600 sshkey.private-> for reading the password to login using this 
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+ method 
+
+Level 14 Password : MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+
+------------------------------------------------------------------
+LEVEL-14
+
+used netcat to send the current level password and submitted to a local service running on port 30000. after submiting it we got the level15 password.
+
+used cmd :nc localhost 30000
+
+Level 15 Password : 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
+-----------------------------------------------------------------
+LEVEL-15
+
+they asked us to use ssl/tls so i used openssl a cryptographic tool which is different from before level nc->it just give raw plain text and here 30001 port required an ssl encrypted connection and nc does not ssl encrypted communications so,we used this.
+
+used cmd : openssl s_client -connect localhost:30001
+
+Level 16 Password : kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+-------------------------------------------------------------------
+LEVEL-16
+
+submitted the password of level16 to a port in 31000-32000 in (31790) the port was correct and extracted the rsa private key data and pasted in the nano file and used the ssh based login as before level.
+nmap used for posrt scanning between many ports.in a range.
+
+used cmd : openssl s_client -connect localhost:31790
+
+Level 17 Password : EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
+
+-------------------------------------------------------------------
+LEVEL-17
+
+we compared the passwords.old and passwords.new using diff and identified the single modified line in passwords.new as the password for bandit 18.
+
+used cmd : diff passwords.old passwords.new
+
+Level 18 Password : x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+
+------------------------------------------------------------------
+LEVEL-18
+
+We bypassed the modified .bashrc logout behavior by executing cat readme directly via SSH, preventing the interactive shell from starting and successfully retrieving the password.
+
+used cmd :ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+
+Level 19 Password : cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+
+------------------------------------------------------------------
+LEVEL-19
+
+we identified that bandit20-do is a setup binary owned by bandit20 by executing this we can give a command extension to it to complete our work with cat/etc/bandit_pass/bandit20 to read the [password of level 20 and got the password.
+
+used cmd : ./bandit20-do cat /etc/bandit_pass/bandit20
+
+Level 20 Password : 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+---------------------------------------------------------------------
 
 
 
